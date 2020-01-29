@@ -46,8 +46,8 @@ public class Main {
 
         TestObject newTestObject = (TestObject) unmarshaller.unmarshal(reader);
 
-        System.out.println(newTestObject);
-        System.out.println(newTestObject.getUsers().get(0));
+        System.out.println(newTestObject); //Вывод: TestObject{users=[User{name='Name1', secondName='SecondName1', phone='+7123456781', address='Some Address 1'}, User{name='Name2', secondName='SecondName2', phone='+7123456782', address='Some Address 2'}, User{name='Name3', secondName='SecondName3', phone='+7123456783', address='Some Address 3'}], someNumber=5, someInformation='Some information'}
+        System.out.println(newTestObject.getUsers().get(0)); //Вывод: User{name='Name1', secondName='SecondName1', phone='+7123456781', address='Some Address 1'}
 
     }
 }
